@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title> CIFRADO POR SUSTITUCION  </title>
+    </h:head>
+    <h:body>
+
+        <center>
+        <hr></hr>
+        <h:graphicImage id="imagen_image1" url="/image1.png" height="150" width="400"/>
+        <hr></hr>
+        
+        <h:form>
+            <p:growl life="3000"/>
+            
+            <p:panel header="INGRESE EL MENSAJE QUE DESEA CIFRAR"
+                     footer="CIFRADO POR SUSTITUCION">
+                
+                <h:panelGrid columns="5">
+                    <textarea name="message1" rows="5" cols="40">Escribe aquí el mensaje</textarea><br></br>
+                    <input type="button" value="CIFRAR MENSAJE"/><br></br><br></br>
+                    <p>Este es el mensaje Cifrado: </p>
+                    <input type="text" disabled="true" cols="40"/>
+                    <input type="button" value="ENVIAR"/>
+                    <p:tooltip value="Ingresar mensaje para cifrar"/>
+                </h:panelGrid>
+                
+            </p:panel>
+        </h:form>
+      </center>
+        <hr></hr>
+        <h:form>
+              <h:commandLink action="Menu_Sustitucion.xhtml">
+              <h:graphicImage id="imagen_flecha" url="/flecha.jpg" height="40" width="40" />
+              </h:commandLink>          
+        </h:form>       
+      
+    </h:body>
+</html>

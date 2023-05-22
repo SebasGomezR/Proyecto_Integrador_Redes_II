@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title> CIFRADO DE PIGPEN  </title>
+    </h:head>
+    <h:body>
+
+        <center>
+        <hr></hr>
+        <h:graphicImage id="imagen_image1" url="/image1.png" height="150" width="400"/>
+        <hr></hr>
+        
+        <h:form>
+            <p:growl life="3000"/>
+            
+            <p:panel header="MENU DEL CIFRADO DE PIGPEN"
+                     footer="INFORMACION DEL CIFRADO DE PIGPEN">
+                
+                <h:panelGrid columns="2">
+                    <h:outputLink id="Pto1" value="Cifrar_Pigpen.xhtml"> * CIFRAR MENSAJE </h:outputLink>
+                    <p:tooltip for="Pto1" value="Ingresar mensaje para cifrar"/>
+                    
+                    <h:outputLink id="Pto2" value="Descifrar_Pigpen.xhtml"> * DESCIFRAR MENSAJE </h:outputLink>
+                    <p:tooltip for="Pto2" value="Ingresar mensaje para descifrar"/>
+                </h:panelGrid>
+                
+            </p:panel>
+        </h:form>
+      </center>
+        <hr></hr>
+        <h:form>
+              <h:commandLink action="Menu.xhtml">
+              <h:graphicImage id="imagen_flecha" url="/flecha.jpg" height="40" width="40" />
+              </h:commandLink>          
+        </h:form>       
+      
+    </h:body>
+</html>

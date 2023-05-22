@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    
+    <h:head>
+        <title> APLICACION DE CIFRADO Y DESCIFRADO DE MENSAJES </title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    
+    <h:body>
+
+        <center>
+            <hr></hr>
+            <h:graphicImage id="imagen_Logo2" url="/Logo2.jpg" height="150" width="400"/>
+            <hr></hr>
+        
+        <h:form>
+            <p:growl life="3000"/>
+            
+            <p:panel header="MENÚ PRINCIPAL"
+                     footer="MENU DE CIFRADO Y DESCIFRADO DE MENSAJES">
+                
+                <h:panelGrid columns="2">
+                    
+                    <h:outputLink id="Pto1" value="Menu_Sustitucion.xhtml"> 1. CIFRADO POR SUSTITUCIÓN </h:outputLink>
+                    <p:tooltip for="Pto1" value="Ingresar al cifrado de Sustitución"/>
+                    
+                    <h:outputLink id="Pto2" value="Menu_Transposicion.xhtml"> 2. CIFRADO POR TRANSPOSICIÓN </h:outputLink>
+                    <p:tooltip for="Pto2" value="Ingresar al cifrado de Transposición"/>
+                    
+                    <h:outputLink id="Pto3" value="Menu_Rsa.xhtml"> 3. CIFRADO DE RSA </h:outputLink>
+                    <p:tooltip for="Pto3" value="Ingresar al cifrado de RSA"/>
+                    
+                     <h:outputLink id="Pto4" value="Menu_PigPen.xhtml"> 4. CIFRADO DE PIGPEN </h:outputLink>
+                    <p:tooltip for="Pto4" value="Ingresar al cifrado de PigPen"/>
+                    
+                </h:panelGrid>
+                
+            </p:panel>
+        </h:form>
+        </center>       
+      <hr></hr>
+    </h:body>
+</html>
